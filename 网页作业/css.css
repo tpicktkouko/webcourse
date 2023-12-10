@@ -1,0 +1,135 @@
+
+.swiper {
+    position: relative;
+    padding: 60px 0;
+    background-color: #000;
+  }
+.swiper .swiper_title {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .swiper .swiper_title h3 {
+    color: #fff;
+    font-weight: 600;
+    font-weight: 32px;
+    padding-bottom: 18px;
+  }
+  .swiper .swiper_title .more a {
+    color: #fff;
+  }
+ .swiper .swiper_title .more a:first-child:hover {
+    border-bottom: 2px solid #fff;
+  }
+   .swiper .swiper_title .more a:last-child {
+    margin-left: 10px;
+    display: inline-block;
+    color: #000;
+    background-color: #fff;
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+  }
+.swiper .swiper_content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+ .swiper .swiper_content .swiper_box {
+    flex: 1;
+  }
+.swiper .swiper_content .swiper_box a {
+    display: block;
+    position: relative;
+    background-color: #1d1d1d;
+    height: 480px;
+    padding: 30px 20px;
+  }
+.swiper .swiper_content .swiper_box a img {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80%;
+  }
+.swiper .swiper_content .swiper_box a p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+  }
+.swiper .swiper_content .swiper_box a:hover p span {
+    border-bottom: 2px solid #fff;
+  }
+.swiper .swiper_content .swiper_box:first-child {
+    margin-right: 15px;
+  }
+.swiper .swiper_content .swiper_box:nth-child(2) {
+    margin: 0 15px;
+  }
+.swiper .swiper_content .swiper_box:last-child {
+    margin-left: 15px;
+  }
+.swiper .swiper_light {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+  }
+.swiper .swiper_light{
+  .black{display: none;}
+  .white{display: block;font-size: 20px;}
+  &:hover{
+    .black{display: block;}
+    .white{display: none;}
+  }
+}
+.swiper .swiper_light span i {
+    font-size: 20px;
+  }
+.swiper .swiper_right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+.swiper .swiper_right:hover {
+    color: #fff;
+    background-color: #000;
+  }
+.swiper .swiper_right span i {
+    font-size: 20px;
+  }
+.swiper .swiper_dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+  }
+.swiper .swiper_dot ul li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1d1d1d;
+    margin-left: 20px;
+  }
+.swiper .swiper_dot ul li:first-child {
+    background-color: #fff;
+  }
