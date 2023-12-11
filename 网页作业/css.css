@@ -72,30 +72,7 @@
 .swiper .swiper_content .swiper_box:last-child {
     margin-left: 15px;
   }
-.swiper .swiper_light {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    line-height: 50px;
-    text-align: center;
-    cursor: pointer;
-  }
-.swiper .swiper_light{
-  .black{display: none;}
-  .white{display: block;font-size: 20px;}
-  &:hover{
-    .black{display: block;}
-    .white{display: none;}
-  }
-}
-.swiper .swiper_light span i {
-    font-size: 20px;
-  }
-.swiper .swiper_right {
+.swiper .swiper_next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -109,15 +86,37 @@
     color: #000;
     cursor: pointer;
   }
-.swiper .swiper_right:hover {
+.swiper .swiper_next span i {
+    font-size: 20px;
+  }
+.swiper .swiper_next:hover {
     color: #fff;
     background-color: #000;
   }
-.swiper .swiper_right span i {
+.swiper .swiper_pre {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+.swiper .swiper_pre:hover {
+    color: #fff;
+    background-color: #000;
+  }
+.swiper .swiper_pre span i {
     font-size: 20px;
   }
-.swiper .swiper_dot {
+  .swiper .swiper_dot {
     display: flex;
+
     justify-content: center;
     align-items: center;
     margin-top: 45px;
