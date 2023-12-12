@@ -17,28 +17,27 @@
             </div>
         </div>
         <div class="swiper_content">
-            <div class="swiper_box">
+            <div class="card" id="1">
                 <a href="#">
                     <p><span>Egypt</span></p>
                     <img src="./img/mummy_mask-teaser.png" alt="">
                 </a>
             </div>
-            <div class="swiper_box">
+            <div class="card" id="card">
                 <a href="#">
                     <p><span>Desire,love and identity</span></p>
                     <img src="./img/Untitled.png" alt="">
                 </a>
-
             </div>
-            <div class="swiper_box">
+            <div class="card" id="card">
                 <a href="#">
                     <p><span>Animals</span></p>
                     <img src="./img/southwark cat (1).png" alt="">
                 </a>
             </div>
         </div>
-        <div class="swiper_pre"><span><i class="fa fa-angle-left"><</i></span></div>
-        <div class="swiper_next"><span><i class="fa fa-angle-right">></i></span></div>
+        <div class="swiper_pre"><span><i class="fa fa-angle-left"> < </i></span></div>
+        <div class="swiper_next"><span><i class="fa fa-angle-right"> > </i></span></div>
         <div class="swiper_dot">
             <ul>
                 <li></li>
@@ -48,6 +47,28 @@
             </ul>
         </div>
     </div>
+    <script>
+        const movelimit = document.getElementById("card");
+        const card = document.getElementById("card");
+        const cardshine = document.getElementById("card-shine");
+        movelimit.addEventListener("mousemove", (e) => {
+            window.requestAnimationFrame(function() {
+                movecard(e.clientX, e.clientY);
+            });
+        });
+        const speed = 10000;
+        function movecard(x, y) {
+            let box = card.getBoundingClientRect();
+            let calcX = (y - box.y - (box.height / 2)) / speed;
+            let calcY = (x - box.x - (box.width / 2)) / speed * -1;
+            card.style.transform = "rotateX" + "(" + calcX + "deg" + ")" + "rotateY" + "(" + calcY + "deg" + ")";
+        }
+        movelimit.addEventListener("mouseleave", (e) => {
+            window.requestAnimationFrame(function() {
+                card.style.transform = "rotateX(0) rotateY(0)";
+            });
+        });
+    </script>
     
 </body>
 </html>

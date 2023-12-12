@@ -1,5 +1,14 @@
-
+body,html{
+transform-style: preserve-3d;
+perspective: 10px;
+}
+div{
+transform-style: preserve-3d;
+cursor: pointer;
+transition: all 0.1s;
+}
 .swiper {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     padding: 60px 0;
     background-color: #000;
@@ -9,6 +18,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
   }
   .swiper .swiper_title h3 {
     color: #fff;
@@ -19,10 +29,10 @@
   .swiper .swiper_title .more a {
     color: #fff;
   }
- .swiper .swiper_title .more a:first-child:hover {
+.swiper .swiper_title .more a:first-child:hover {
     border-bottom: 2px solid #fff;
   }
-   .swiper .swiper_title .more a:last-child {
+.swiper .swiper_title .more a:last-child {
     margin-left: 10px;
     display: inline-block;
     color: #000;
@@ -38,38 +48,40 @@
     margin: 0 auto;
     display: flex;
   }
- .swiper .swiper_content .swiper_box {
+.swiper .swiper_content .card{
     flex: 1;
+    transform-style: preserve-3d;
+    z-index: 1000;
   }
-.swiper .swiper_content .swiper_box a {
+.swiper .swiper_content .card a {
     display: block;
     position: relative;
     background-color: #1d1d1d;
     height: 480px;
     padding: 30px 20px;
   }
-.swiper .swiper_content .swiper_box a img {
+.swiper .swiper_content .card a img {
     position: absolute;
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     height: 80%;
   }
-.swiper .swiper_content .swiper_box a p {
+.swiper .swiper_content .card a p {
     color: #fff;
     font-weight: 600;
     font-size: 24px;
   }
-.swiper .swiper_content .swiper_box a:hover p span {
+.swiper .swiper_content .card a:hover p span {
     border-bottom: 2px solid #fff;
   }
-.swiper .swiper_content .swiper_box:first-child {
+.swiper .swiper_content .card:first-child {
     margin-right: 15px;
   }
-.swiper .swiper_content .swiper_box:nth-child(2) {
+.swiper .swiper_content .card:nth-child(2) {
     margin: 0 15px;
   }
-.swiper .swiper_content .swiper_box:last-child {
+.swiper .swiper_content .card:last-child {
     margin-left: 15px;
   }
 .swiper .swiper_next {
@@ -84,14 +96,18 @@
     text-align: center;
     background-color: #fff;
     color: #000;
+    border-radius: 50%;
     cursor: pointer;
-  }
+    transform: translate(-10%,-50%) scale(1);
+    transition: transform 0.5s;
+}
 .swiper .swiper_next span i {
     font-size: 20px;
   }
 .swiper .swiper_next:hover {
     color: #fff;
     background-color: #000;
+    transform: translate(-10%,-50%) scale(0.8);
   }
 .swiper .swiper_pre {
     position: absolute;
@@ -105,18 +121,21 @@
     text-align: center;
     background-color: #fff;
     color: #000;
+    border-radius: 50%;
     cursor: pointer;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 0.5s;
   }
 .swiper .swiper_pre:hover {
     color: #fff;
     background-color: #000;
+    transform: translate(-50%,-50%) scale(0.8);
   }
 .swiper .swiper_pre span i {
     font-size: 20px;
   }
-  .swiper .swiper_dot {
+.swiper .swiper_dot {
     display: flex;
-
     justify-content: center;
     align-items: center;
     margin-top: 45px;
