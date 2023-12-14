@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css.css">
+    <script  type="text/javascript" src="./js.js"></script>
+    <script type="text/javascript">
+        .getElementById
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -17,16 +21,16 @@
             </div>
         </div>
         <div class="swiper_content">
-            <div class="card" id="1">
+            <div class="card" id="1" >
                 <a href="#">
                     <p><span>Egypt</span></p>
-                    <img src="./img/mummy_mask-teaser.png" alt="">
+                    <img src="./img/mummy_mask-teaser.png" alt="" id="">
                 </a>
             </div>
             <div class="card" id="card">
                 <a href="#">
                     <p><span>Desire,love and identity</span></p>
-                    <img src="./img/Untitled.png" alt="">
+                    <img src="./img/Untitled.png" alt="" id="card">
                 </a>
             </div>
             <div class="card" id="card">
@@ -47,28 +51,7 @@
             </ul>
         </div>
     </div>
-    <script>
-        const movelimit = document.getElementById("card");
-        const card = document.getElementById("card");
-        const cardshine = document.getElementById("card-shine");
-        movelimit.addEventListener("mousemove", (e) => {
-            window.requestAnimationFrame(function() {
-                movecard(e.clientX, e.clientY);
-            });
-        });
-        const speed = 39000;
-        function movecard(x, y) {
-            let box = card.getBoundingClientRect();
-            let calcX = (y - box.y - (box.height / 2)) / speed;
-            let calcY = (x - box.x - (box.width / 2)) / speed * -1;
-            card.style.transform = "rotateX" + "(" + calcX + "deg" + ")" + "rotateY" + "(" + calcY + "deg" + ")";
-        }
-        movelimit.addEventListener("mouseleave", (e) => {
-            window.requestAnimationFrame(function() {
-                card.style.transform = "rotateX(0) rotateY(0)";
-            });
-        });
-    </script>
+ <script></script>
     
 </body>
 </html>

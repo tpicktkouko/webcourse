@@ -1,6 +1,6 @@
 body,html{
 transform-style: preserve-3d;
-perspective: 5px;
+perspective: 6px;
 }
 div{
 transform-style: preserve-3d;
@@ -44,12 +44,12 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 50%;
   }
 .swiper .swiper_content {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
   }
 .swiper .swiper_content .card{
-    flex: 1;
+    flex: 2;
     transform-style: preserve-3d;
     z-index: 1000;
   }
