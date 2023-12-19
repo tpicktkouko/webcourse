@@ -5,7 +5,7 @@ perspective: 6px;
 div{
 transform-style: preserve-3d;
 cursor: pointer;
-transition: all 0.1s;
+transition: all 0.2s ;
 }
 .swiper {
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
