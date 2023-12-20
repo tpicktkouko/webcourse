@@ -1,6 +1,6 @@
 body,html{
 transform-style: preserve-3d;
-perspective: 6px;
+perspective: 3PX;
 }
 div{
 transform-style: preserve-3d;
