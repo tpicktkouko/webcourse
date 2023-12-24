@@ -1,12 +1,3 @@
-body,html{
-transform-style: preserve-3d;
-perspective: 3PX;
-}
-div{
-transform-style: preserve-3d;
-cursor: pointer;
-transition: all 0.2s ;
-}
 .swiper {
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
@@ -53,6 +44,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transform-style: preserve-3d;
     z-index: 1000;
   }
+.swiper .swiper_content .card .right_box:hover{
+  transform: skewX(1deg);
+} 
 .swiper .swiper_content .card a {
     display: block;
     position: relative;
